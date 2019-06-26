@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Vlad
+MAINTAINER Flyewzz
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y gnupg
@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 # Клонируем проект
 USER root
-RUN git clone https://github.com/Vlad104/TP_DB_RK2.git # рекомендую каждый раз менять этот коммент, дабы избежать кеширования
+RUN git clone https://github.com/Flyewzz/db-forum-homework.git # рекомендую каждый раз менять этот коммент, дабы избежать кеширования
 WORKDIR TP_DB_RK2
 
 # Устанавливаем PostgreSQL
