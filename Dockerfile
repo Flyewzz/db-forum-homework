@@ -9,8 +9,8 @@ RUN apt-get update && \
 
 # Клонируем проект
 USER root
-RUN git clone https://github.com/Flyewzz/db-forum-homework.git # рекомендую каждый раз менять этот коммент, дабы избежать кеширования
-WORKDIR TP_DB_RK2
+RUN git clone https://github.com/Flyewzz/db-forum-homework.git
+WORKDIR db-forum-homework
 
 # Устанавливаем PostgreSQL
 RUN apt-get -y update
